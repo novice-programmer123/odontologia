@@ -17,16 +17,47 @@
     border-radius: 25px;
 }
 .header {
+    display: flex;
     position: sticky;
     top: 0;
     z-index: 10;
-
-    background-image: url(WalkingEggsLogo.png);
-    background-size: cover;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    height: 300px;
+    height: 150px;
     width: auto;
+    background-color: #f2f2f2;
+}
+.LogoHeader{
+    height: 90%;
+    align-items:baseline;
+    align-self: baseline;
+}
+.Headernav{
+    display: flex;
+    flex-direction: row;
+    border: 0.5px solid #000000;
+    border-radius: 25px;
+    margin-left: 60px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.HeadernavW{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    border: 0.5px solid #000000;
+    border-radius: 25px;
+    padding: 20px;
+    transition: transform 0.5s ease;
+}
+.HeadernavW:hover{
+    background-color: darkgreen;
+    color: #ffffff;
+    border: 0.5px solid #000000;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #020202;
+    transform: translateY(-5px);
+    
 }
 .main {
     flex-direction: column;
@@ -35,7 +66,10 @@
     height: auto;
     width: auto;
 }
-
+.Widgets{
+    display: flex;
+    flex-direction: row;
+}
 .widget{
     background-color: #be4b4b;
     padding: 50px;
