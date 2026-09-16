@@ -12,34 +12,36 @@
     display: flex;
     padding: 20px;
     margin: 10px;
-    border: 1px solid #000000;
-    box-shadow: 5px 5px 10px #020202;
-    border-radius: 25px;
+
 }
 .header {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
     position: sticky;
     top: 0;
     z-index: 10;
-    flex-direction: row;
-    align-items: center;
-    height: 150px;
     width: auto;
-    background-color: #f2f2f2;
+    background-color: white;
 }
+
 .LogoHeader{
-    height: 90%;
-    align-items:baseline;
-    align-self: baseline;
+  max-height: 100px;
+  
 }
 .Headernav{
     display: flex;
     flex-direction: row;
     border: 0.5px solid #000000;
     border-radius: 25px;
-    margin-left: 60px;
+    margin-left: 0;
     flex-wrap: wrap;
     gap: 20px;
+}
+.HNWHo{
+    align-self: center;
 }
 .HeadernavW{
     text-decoration: none;
@@ -57,12 +59,12 @@
     border-radius: 25px;
     box-shadow: 5px 5px 10px #020202;
     transform: translateY(-5px);
-    
 }
+
 .main {
     flex-direction: column;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     height: auto;
     width: auto;
 }
@@ -89,11 +91,15 @@
 .Servicios{
     display: flex;
     flex-direction: column;
-    background-color: aliceblue;
+    background-color: ffffff;
     border-radius: 25px;
     padding: 20px;
     align-items: center;
     text-align: center;
+}
+.implanteimg{
+    display: flex;
+    flex-direction: row;
 }
 .footer{
     display: flex;
@@ -102,4 +108,28 @@
 }
 p {
     text-align: center;
+}
+.article{
+    align-items: center;
+}
+.boton {
+    display: flex;
+    width: max-content;
+    margin: 20px auto;
+    border: 0.5px solid #000000;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #020202;
+    padding: 10px;
+    justify-content: center;
+    text-decoration: none;
+    color: #000000;
+    transition:transform  0.3s ease;
+}
+.boton:hover{
+    background-color: darkgreen;
+    color: #ffffff;
+    border: 0.5px solid #000000;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #020202;
+    transform: translateY(-5px);
 }
